@@ -8,11 +8,11 @@ const Experience = () => {
       company: "SkyrocketCoach",
       date: "2023 - 2024",
       description:
-        "Developed modern web applications using React, Node.js, MongoDB and also in wordpress",
+        "Developed modern web applications using React, Node.js, MongoDB and also in WordPress.",
     },
     {
       id: 2,
-      title: "web Developer",
+      title: "Web Developer",
       company: "Dainik Vorer Angikar News Media",
       date: "2023 - 2024",
       description:
@@ -29,7 +29,10 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="relative py-16 bg-gray-900 text-white">
+    <section
+      id="experience"
+      className="relative py-16 bg-gray-900 text-white overflow-x-hidden"
+    >
       <div className="max-w-5xl mx-auto px-6">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -42,7 +45,7 @@ const Experience = () => {
 
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-700 h-full hidden md:block"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-700 h-full hidden md:block pointer-events-none"></div>
 
           {/* Timeline Items */}
           {experiences.map((experience, index) => (
@@ -69,8 +72,8 @@ const Experience = () => {
 
               {/* Circle Marker */}
               <div
-                className="w-6 h-6 bg-green-500 rounded-full absolute top-1/2 transform -translate-y-1/2 md:translate-x-0 translate-x-1/2 md:left-1/2  hidden lg:block md:block"
-                style={{ left: "calc(0.4878 * 100%)" }}
+                className="w-6 h-6 bg-green-500 rounded-full absolute top-1/2 transform -translate-y-1/2 hidden md:block"
+                style={{ left: "50%" }}
               ></div>
             </motion.div>
           ))}

@@ -15,7 +15,7 @@ const Footer = () => {
                 Get in <span className="text-gray-400">touch</span>
               </h2>
               <a
-                className="md:text-7xl text-4xl font-semibold text-white underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-200 transition duration-300"
+                className="md:text-7xl lg:text-4xl text-2xl font-semibold text-white underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-200 transition duration-300"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=arshakib428@gmail.com"
               >
                 arshakib428@gmail.com
