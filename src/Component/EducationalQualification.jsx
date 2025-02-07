@@ -64,7 +64,7 @@ const EducationalQualification = () => {
                 Secondary School Certificate (SSC)
               </h3>
               <p className="text-sm text-gray-400">
-                Your School Name, Barishal
+                Collegiate Secondary School, Barishal
               </p>
               <p className="text-sm text-gray-500">2017 - 2022</p>
             </div>

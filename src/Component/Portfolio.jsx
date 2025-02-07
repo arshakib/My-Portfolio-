@@ -1,37 +1,134 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import proj1 from "../assets/proj1.jpg";
-import proj2 from "../assets/proj1.jpg";
-import proj3 from "../assets/proj1.jpg";
+import proj1 from "../assets/1738656812954.jpg";
+import proj2 from "../assets/1738428030659.jpg";
+import proj3 from "../assets/1735582095901.jpg";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
   {
-    title: "Ecommerce Digital Products",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    devstack: "MongoDB, Express, React, Node.js",
-    link: "#",
-    git: "#",
+    title: "Collaborative Study Platform",
+    desc: "The Collaborative Study Platform is an interactive web application designed to facilitate online learning by connecting students and tutors. It features role-based dashboards, secure authentication, CRUD functionalities, and a responsive design. Users can participate in study sessions, manage study materials, and access a structured learning environment.",
+    challenges: [
+      {
+        title: "Implementing TanStack Query for optimized data fetching.",
+      },
+      {
+        title: "Creating paginated views for large datasets.",
+      },
+      {
+        title:
+          "Ensuring secure JWT-based authentication and local storage handling.",
+      },
+      {
+        title:
+          "Implementing modal popups for session rejections and feedback collection.",
+      },
+    ],
+    plans: [
+      {
+        title: "Live chat integration for real-time student-tutor interaction.",
+      },
+      {
+        title: "AI-powered session recommendations based on user preferences.",
+      },
+      {
+        title: "Automated reminders for upcoming study sessions.",
+      },
+      {
+        title: "Multi-language support to enhance accessibility.",
+      },
+    ],
+    devstack: "MongoDB, Express, React, Node.js, Firebase, JWT, Stripe",
+    link: "https://imaginative-chebakia-1dc907.netlify.app/",
+    git: "https://github.com/arshakib/Study-Platform-client",
     src: proj1,
     type: "fullstack",
   },
   {
-    title: "Ecommerce Digital Products",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    devstack: "MongoDB, Express, React, Node.js",
-    link: "#",
-    git: "#",
+    title: "Volunteer Management Website",
+    desc: "The Volunteer Management Website is a platform designed to streamline volunteer activities. Users can create, update, and delete volunteer posts, as well as sign up to help others. The site includes authentication, dynamic UI, pagination, and CRUD functionalities for seamless volunteer management.",
+    challenges: [
+      {
+        title:
+          "JWT Authentication & Security: Implementing proper authentication and route protection.",
+      },
+      {
+        title:
+          "Pagination: Ensuring smooth and efficient pagination for posts.",
+      },
+      {
+        title: "Dark/Light Theme: Managing state persistence across sessions.",
+      },
+      {
+        title:
+          "CRUD Operations: Ensuring seamless database integration and UI feedback.",
+      },
+    ],
+    plans: [
+      {
+        title:
+          "Implement email verification and password recovery for better security.",
+      },
+      {
+        title: "Enhance UI animations with more advanced effects.",
+      },
+      {
+        title:
+          "Introduce admin roles for moderating volunteer requests and user activity.",
+      },
+      {
+        title:
+          "Add real-time notifications for new posts and volunteer approvals.",
+      },
+    ],
+    devstack: "MongoDB, Express, React, Node.js, Firebase, JWT",
+    link: "https://heartfelt-trifle-9895a1.netlify.app/",
+    git: "https://github.com/arshakib/Need-volunteer-application-client",
     src: proj2,
     type: "fullstack",
   },
   {
-    title: "Ecommerce Digital Products",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    devstack: "MongoDB, Express, React, Node.js",
-    link: "#",
-    git: "#",
+    title: "Chill Gamer: A Game Review Application",
+    desc: "Chill Gamer is a game review platform where users can explore, add, and manage game reviews. It features secure authentication, a personalized watchlist, sorting and filtering of reviews, and a responsive, interactive UI with a dynamic dark/light theme toggle.",
+    challenges: [
+      {
+        title:
+          "Sorting & Filtering Reviews: Implementing efficient sorting and filtering on the All Reviews page.",
+      },
+      {
+        title:
+          "Review Update Modal: Creating a seamless user experience for updating reviews using a modal",
+      },
+      {
+        title:
+          "Authentication & Authorization: Managing secure Firebase authentication for different login methods.",
+      },
+      {
+        title:
+          "Deployment Issues: Ensuring Firebase and MongoDB credentials remain secure using environment variables.",
+      },
+    ],
+    plans: [
+      {
+        title: "Implement real-time notifications for review interactions.",
+      },
+      {
+        title: "Add game recommendation features based on user reviews.",
+      },
+      {
+        title:
+          "Introduce an admin panel for moderating reviews and managing users.",
+      },
+      {
+        title: "Improve UI animations for a more engaging user experience.",
+      },
+    ],
+    devstack: "MongoDB, Express, React, Node.js, Firebase, JWT",
+    link: "https://jade-tiramisu-6c88cc.netlify.app/",
+    git: "https://github.com/arshakib/Game-Review-Application-client",
     src: proj3,
     type: "fullstack",
   },
@@ -88,11 +185,27 @@ const Portfolio = () => {
                         <img
                           src={project.src}
                           alt={project.title}
-                          className="w-full md:w-1/2 h-64 object-cover rounded-lg"
+                          className="w-full md:w-1/2 h-auto object-cover rounded-lg"
                         />
                         <div className="flex-1">
                           <p className=" text-white/70 mb-4">{project.desc}</p>
-                          <p className=" text-emerald-300 font-medium-mb-2">
+                          <p className=" text-emerald-300 font-medium mt-3 mb-1">
+                            Challenges Faced
+                          </p>
+                          {project.challenges.map((challenge, index) => (
+                            <p key={index} className="text-white/70 mb-4">
+                              {challenge.title}
+                            </p>
+                          ))}
+                          <p className=" text-emerald-300 font-medium mt-3 mb-1">
+                            Future Plans
+                          </p>
+                          {project.plans.map((plans, index) => (
+                            <p key={index} className="text-white/70 mb-4">
+                              {plans.title}
+                            </p>
+                          ))}
+                          <p className=" text-emerald-300 font-medium mb-2">
                             Stack: {project.devstack}
                           </p>
                         </div>
@@ -101,12 +214,14 @@ const Portfolio = () => {
                         </p>
                         <div className="flex justify-start items-center space-x-4">
                           <a
+                            target="_blank"
                             href={project.link}
                             className="text-emerald-400 hover:text-blue-300 transition-colors"
                           >
                             <HiOutlineExternalLink />
                           </a>
                           <a
+                            target="_blank"
                             href={project.git}
                             className="text-gray-400 hover:text-gray-300 transition-colors"
                           >

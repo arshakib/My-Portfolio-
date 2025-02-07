@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import project1 from "../assets/proj1.jpg";
+import project1 from "../assets/unnamed.jpg";
 import project2 from "../assets/github.png";
 const About = () => {
   return (
@@ -12,10 +12,10 @@ const About = () => {
           <div className="border ☐ border-white/20 rounded-lg p-6">
             <h3 className="text-2xl font-bold mb-2">01. Background</h3>
             <p className="text-white/50 mb-6">
-              I am a passionate full-stack developer with a strong foundation in
-              computer science and a love for creating innovative web solutions.
-              My journey in tech started with a curiosity about how things work,
-              which led me to pursue a career in web development.
+              I am a passionate Front-End focused MERN stack developer with a
+              strong foundation in basic and a love for creating innovative web
+              solutions. My journey in tech started with a curiosity about how
+              things work, which led me to pursue a career in web development.
             </p>
             <div className="rounded-lg p-4 mb-4 border border-white/20">
               <code className="text-emerald-200/50">
@@ -27,11 +27,11 @@ const About = () => {
                 <br />
                 &nbsp; &nbsp; 'Node.js',
                 <br />
-                &nbsp; &nbsp; 'Python',
+                &nbsp; &nbsp; 'MongoDB',
                 <br />
-                &nbsp; &nbsp; 'SQL',
+                &nbsp; &nbsp; 'Express.js',
                 <br />
-                &nbsp; &nbsp; 'AWS'
+                &nbsp; &nbsp; 'Tailwind CSS',
                 <br />
                 ];
               </code>
@@ -64,8 +64,8 @@ const About = () => {
               <div className="border ☐ border-white/20 rounded-lg p-3">
                 <h4 className="text-emerald-300 font-medium mb-2">Frontend</h4>
                 <ul className="text-white/50 space-y-1 text-sm">
-                  <li>React/Next.js</li>
-                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Next.js</li>
                   <li>Tailwind CSS</li>
                   <li>Framer Motion</li>
                 </ul>
@@ -74,9 +74,8 @@ const About = () => {
                 <h4 className="text-emerald-300 font-medium mb-2">Backend</h4>
                 <ul className="text-white/50 space-y-1 text-sm">
                   <li>Node.js</li>
-                  <li>Python</li>
-                  <li>PostgreSQL</li>
-                  <li>AWS</li>
+                  <li>MongoDB</li>
+                  <li>Express.js</li>
                 </ul>
               </div>
             </div>
@@ -94,10 +93,18 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-2">05. Goals</h3>
             <p className="text-white/50">
-              My goal is to continue growing as a developer, tackling
-              challenging projects, and contributing to the tech community. I'm
-              always excited to learn new technologies and push the boundaries
-              of what's possible in web development.
+              I am a front-end focused MERN stack developer who collaborates
+              with various organizations and soft skills experts to build
+              dynamic, user-centric web applications while continuously refining
+              both my technical expertise and interpersonal abilities.
+              Passionate about innovation, I specialize in creating responsive
+              interfaces with HTML, CSS, JavaScript, and React, and I integrate
+              robust server-side solutions using Node.js and MongoDB. My
+              development goals are centered on mastering advanced front-end
+              techniques, expanding my full-stack capabilities, and contributing
+              to projects that optimize performance and enhance user
+              experiences, all while leveraging a strong foundation in
+              communication and teamwork to drive impactful, measurable results.
             </p>
           </div>
         </div>

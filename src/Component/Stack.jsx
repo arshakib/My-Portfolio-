@@ -1,37 +1,64 @@
 import { useEffect } from "react";
-import { SiFramer } from "react-icons/si";
+import {
+  SiFramer,
+  SiReact,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiJavascript,
+  SiNodedotjs,
+  SiMongodb,
+  SiFirebase,
+} from "react-icons/si";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const stackItems = [
   {
     id: 1,
-    name: "Framer",
-    icon: <SiFramer size={100}></SiFramer>,
+    name: "React",
+    icon: <SiReact size={100}></SiReact>,
     color: "text-emerald-200",
   },
   {
     id: 2,
-    name: "Framer",
-    icon: <SiFramer size={100}></SiFramer>,
+    name: "Tailwind",
+    icon: <SiTailwindcss size={100}></SiTailwindcss>,
     color: "text-emerald-200",
   },
   {
     id: 3,
-    name: "Framer",
-    icon: <SiFramer size={100}></SiFramer>,
+    name: "Javascript",
+    icon: <SiJavascript size={100}></SiJavascript>,
     color: "text-emerald-200",
   },
   {
     id: 4,
-    name: "Framer",
+    name: "Next.js",
+    icon: <SiNextdotjs size={100}></SiNextdotjs>,
+    color: "text-emerald-200",
+  },
+  {
+    id: 5,
+    name: "Node.js",
+    icon: <SiNodedotjs size={100}></SiNodedotjs>,
+    color: "text-emerald-200",
+  },
+  {
+    id: 5,
+    name: "Framer Motion",
     icon: <SiFramer size={100}></SiFramer>,
     color: "text-emerald-200",
   },
   {
     id: 5,
-    name: "Framer",
-    icon: <SiFramer size={100}></SiFramer>,
+    name: "MongoDB",
+    icon: <SiMongodb size={100}></SiMongodb>,
+    color: "text-emerald-200",
+  },
+  {
+    id: 5,
+    name: "Firebase",
+    icon: <SiFirebase size={100}></SiFirebase>,
     color: "text-emerald-200",
   },
 ];

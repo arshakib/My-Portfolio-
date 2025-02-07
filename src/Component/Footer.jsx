@@ -1,6 +1,6 @@
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  AiFillLinkedin,
   AiFillFacebook,
   AiFillInstagram,
 } from "react-icons/ai";
@@ -18,17 +18,17 @@ const Footer = () => {
                 className="md:text-7xl text-4xl font-semibold text-white underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-200 transition duration-300"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=arshakib428@gmail.com"
               >
-                john@doe.com
+                arshakib428@gmail.com
               </a>
             </div>
             <div className="text-white/50 mt-12">
               <div className="mb-8">
                 <p className="text-lg mb-1">Phone</p>
                 <a
-                  href="tel:+990788979999"
+                  href="tel:+8801720811737"
                   className="text-2xl font-semibold underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-200 transition duration-300"
                 >
-                  +99 78 897 9999
+                  +8801720811737
                 </a>
               </div>
               <div className="text-lg mb-8">
@@ -59,6 +59,7 @@ const Footer = () => {
             </p>
             <ul className="flex gap-5 flex-wrap">
               <a
+                target="_blank"
                 href="https://github.com"
                 aria-label="GitHub"
                 className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
@@ -66,32 +67,28 @@ const Footer = () => {
                 <AiFillGithub size={30} />
               </a>{" "}
               <a
-                href="https://github.com"
+                target="_blank"
+                href="https://www.linkedin.com/in/ashiqur-rahman-shakib/"
                 aria-label="GitHub"
                 className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
               >
-                <AiFillGithub size={30} />
+                <AiFillLinkedin size={30} />
               </a>{" "}
               <a
-                href="https://github.com"
+                target="_blank"
+                href="https://www.facebook.com/asiqurrahman.shakib.7"
                 aria-label="GitHub"
                 className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
               >
-                <AiFillGithub size={30} />
+                <AiFillFacebook size={30} />
               </a>{" "}
               <a
-                href="https://github.com"
+                target="_blank"
+                href="https://www.instagram.com/asiqurrahman.shakib.7/"
                 aria-label="GitHub"
                 className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
               >
-                <AiFillGithub size={30} />
-              </a>{" "}
-              <a
-                href="https://github.com"
-                aria-label="GitHub"
-                className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
-              >
-                <AiFillGithub size={30} />
+                <AiFillInstagram size={30} />
               </a>{" "}
             </ul>
           </div>
