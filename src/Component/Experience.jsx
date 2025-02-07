@@ -57,7 +57,7 @@ const Experience = () => {
             >
               {/* Content Container */}
               <div
-                className={`lg:w-full md:w-5/12 bg-gray-800 p-6 rounded-lg shadow-md relative ${
+                className={`w-full md:w-5/12 bg-gray-800 p-6 rounded-lg shadow-md relative ${
                   index % 2 === 0 ? "md:ml-auto md:mr-6" : "md:mr-auto md:ml-6"
                 }`}
               >
