@@ -40,10 +40,17 @@ const About = () => {
           <div className="border border-white/20 rounded-lg p-6">
             <h3 className="text-2xl font-bold mb-2">02. Expertise</h3>
             <p className="text-white/50">
-              I specialize in building robust and scalable web applications
-              using modern technologies. My expertise spans both front-end and
-              back-end development, allowing me to create seamless, end-to-end
-              solutions.
+              I am a versatile Front-End focused MERN stack developer
+              specializing in building robust and scalable web applications
+              using modern technologies. With expertise in both front-end and
+              back-end development, I create seamless, end-to-end solutions that
+              enhance user experience and optimize performance. Beyond technical
+              expertise, I have worked with various organizations, allowing me
+              to master communication, public speaking, team management,
+              leadership, problem-solving, and other essential soft skills. This
+              unique combination of technical proficiency and strong
+              interpersonal skills enables me to collaborate effectively, lead
+              teams, and drive impactful digital solutions.
             </p>
             <div className="mt-4 relative border ☐ border-white/20 rounded-lg p-4 h-[220px] overflow-hidden">
               <img
@@ -56,9 +63,14 @@ const About = () => {
           <div className="border ☐ border-white/20 rounded-lg p-6">
             <h3 className="text-2xl font-bold mb-2">03. Skills</h3>
             <p className="text-white/50 mb-4">
-              I'm proficient in a wide range of technologies and constantly
-              expanding my skill set to stay at the forefront of web
-              development.
+              I possess a strong command of a diverse array of technologies,
+              encompassing both front-end and back-end development, and I am
+              committed to continuous learning to remain at the cutting edge of
+              web development trends. My expertise extends beyond technical
+              skills to include a mastery of professional soft skills, enabling
+              me to collaborate effectively within teams, communicate clearly
+              with stakeholders, and adapt readily to evolving project
+              requirements.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="border ☐ border-white/20 rounded-lg p-3">
