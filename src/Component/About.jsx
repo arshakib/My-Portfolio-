@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import project1 from "../assets/unnamed.jpg";
-import project2 from "../assets/github.png";
+import project2 from "../assets/github.jpg";
 const About = () => {
   return (
     <div>

@@ -15,7 +15,7 @@ const Navber = () => {
       <div className="z-50 fixed flex justify-center w-full text-white font-bold">
         <div
           className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl
-hidden md:flex items-center justify-center p-2 max-w-[600px] mx-auto"
+hidden md:flex items-center justify-center p-2 max-w-[650px] mx-auto"
         >
           <ul className="flex flex-row p-2 space-x-8">
             <a
@@ -59,7 +59,7 @@ transition-all duration-300 ease-in-out"
               className="transform hover:skew-x-12 hover:text-white/50
 transition-all duration-300 ease-in-out"
             >
-              Footer
+              Contact Me
             </a>
           </ul>
         </div>
@@ -104,7 +104,7 @@ Z-50 text-white/70 border-white/70 p-2"
             </li>
             <li>
               <a href="#footer" onClick={closeNav} className="text-5x1">
-                Footer
+                Contact Me
               </a>
             </li>
           </ul>

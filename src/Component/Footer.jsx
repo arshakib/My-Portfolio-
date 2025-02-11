@@ -55,7 +55,7 @@ const Footer = () => {
 
           <div className="relative mt-12 container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
             <p className="text-gray-200 caption text-n-4 1g:block">
-              © 2024. All rights reserved.
+              © 2025 ASHIQUR RAHMAN SHAKIB. All rights reserved.
             </p>
             <ul className="flex gap-5 flex-wrap">
               <a

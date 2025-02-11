@@ -3,10 +3,13 @@ import profilepic from "../assets/profilepic.png";
 
 const Hero = () => {
   const handleDownload = () => {
+    console.log("download");
     const link = document.createElement("a");
-    link.href = "../assets/dev cv22.pdf";
+    link.href = "../assets/devcv22.pdf";
     link.download = "ARSHAKIB_CV.pdf";
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
   return (
     <div className="relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,_#000,#071E18_35%,#208A65_67%,#35FB8E_85%)]">
@@ -45,19 +48,15 @@ const Hero = () => {
               creating websites that provides user with best experience.
             </p>
             <div className="flex gap-4 justify-center">
-              <motion.button
+              <button
                 onClick={handleDownload}
-                whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 transition-colors"
+                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 scale-100 hover:scale-105 transition-transform duration-300"
               >
-                View Resume
-              </motion.button>
-              {/* <motion.button
-                whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors"
-              >
-                View Work
-              </motion.button> */}
+                Download CV
+              </button>
+              <button className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors">
+                😊нєℓℓσ
+              </button>
             </div>
           </motion.div>
         </div>
@@ -71,7 +70,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-16 right-1/3 w-96 h-96 ☐ bg-emerald-500/10 rounded-full blur-xl"
+          className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl -z-0 pointer-events-none"
         />
       </div>
     </div>
