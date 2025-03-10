@@ -2,15 +2,15 @@ import { motion } from "framer-motion";
 import profilepic from "../assets/profilepic.png";
 
 const Hero = () => {
-  const handleDownload = () => {
-    console.log("download");
-    const link = document.createElement("a");
-    link.href = "../assets/devcv22.pdf";
-    link.download = "ARSHAKIB_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = () => {
+  //   console.log("download");
+  //   const link = document.createElement("a");
+  //   link.href = "/public/devcv22.pdf";
+  //   link.download = "ARSHAKIB_CV.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
   return (
     <div className="relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,_#000,#071E18_35%,#208A65_67%,#35FB8E_85%)]">
       <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#249974)] top-[450px] border-[1px] border-[#8CD6DE]/30"></div>
@@ -48,11 +48,13 @@ const Hero = () => {
               creating websites that provides user with best experience.
             </p>
             <div className="flex gap-4 justify-center">
-              <button
-                onClick={handleDownload}
-                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 scale-100 hover:scale-105 transition-transform duration-300"
-              >
-                Download CV
+              <button className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 scale-100 hover:scale-105 transition-transform duration-300">
+                <a
+                  href="/public/shakib resume.pdf"
+                  download="ARSHAKIB_RESUME.pdf"
+                >
+                  Download Resume
+                </a>
               </button>
               <button className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors">
                 😊нєℓℓσ

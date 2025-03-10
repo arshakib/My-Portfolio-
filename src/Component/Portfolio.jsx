@@ -3,6 +3,7 @@ import { useState } from "react";
 import proj1 from "../assets/1738656812954.jpg";
 import proj2 from "../assets/1738428030659.jpg";
 import proj3 from "../assets/1735582095901.jpg";
+import proj4 from "../assets/1000116029.jpg";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
@@ -130,6 +131,48 @@ const projects = [
     link: "https://jade-tiramisu-6c88cc.netlify.app/",
     git: "https://github.com/arshakib/Game-Review-Application-client",
     src: proj3,
+    type: "fullstack",
+  },
+  {
+    title: "TaskFlow: Task Management Application",
+    desc: "TaskFlow is a modern and responsive task management application that allows users to add, edit, delete, and reorder tasks using a drag-and-drop interface. Tasks are categorized into To-Do, In Progress, and Done, with real-time updates stored in a MongoDB database. User authentication is handled via Firebase Google Sign-In to ensure secure access.",
+    challenges: [
+      {
+        title:
+          "Real-Time Updates: Ensuring seamless synchronization of tasks across users.",
+      },
+      {
+        title:
+          "Drag-and-Drop Functionality: Implementing a smooth and user-friendly task reordering experience.",
+      },
+      {
+        title: "Firebase Authentication: Secure login using Google Sign-In.",
+      },
+      {
+        title:
+          "Database Optimization: Efficiently managing task data storage and retrieval in MongoDB.",
+      },
+    ],
+    plans: [
+      {
+        title:
+          "Implement collaborative task management with real-time WebSockets.",
+      },
+      {
+        title: "Enhance UI animations for better user experience.",
+      },
+      {
+        title:
+          "Introduce task deadlines and notifications for better productivity.",
+      },
+      {
+        title: "Develop a mobile-friendly Progressive Web App (PWA) version.",
+      },
+    ],
+    devstack: "MongoDB, Express, React, Node.js, Firebase, Socket.IO",
+    link: "https://harmonious-pudding-049454.netlify.app/",
+    git: "https://github.com/arshakib/TaskFlow-client",
+    src: proj4,
     type: "fullstack",
   },
 ];

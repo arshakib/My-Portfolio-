@@ -8,6 +8,7 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiFirebase,
+  SiSocketdotio,
 } from "react-icons/si";
 
 import { motion, useAnimation } from "framer-motion";
@@ -59,6 +60,12 @@ const stackItems = [
     id: 5,
     name: "Firebase",
     icon: <SiFirebase size={100}></SiFirebase>,
+    color: "text-emerald-200",
+  },
+  {
+    id: 6,
+    name: "Sockets.io",
+    icon: <SiSocketdotio size={100}></SiSocketdotio>,
     color: "text-emerald-200",
   },
 ];
