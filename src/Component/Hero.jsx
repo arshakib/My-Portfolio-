@@ -49,10 +49,7 @@ const Hero = () => {
             </p>
             <div className="flex gap-4 justify-center">
               <button className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 scale-100 hover:scale-105 transition-transform duration-300">
-                <a
-                  href="/public/shakib resume.pdf"
-                  download="ARSHAKIB_RESUME.pdf"
-                >
+                <a href="/public/ARS_resume.pdf" download="ARSHAKIB_RESUME.pdf">
                   Download Resume
                 </a>
               </button>
