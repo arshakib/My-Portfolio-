@@ -4,11 +4,55 @@ import proj1 from "../assets/1738656812954.jpg";
 import proj2 from "../assets/1738428030659.jpg";
 import proj3 from "../assets/1735582095901.jpg";
 import proj4 from "../assets/1000116029.jpg";
+import proj5 from "../assets/Ai-Powered-Healthcare-04-06-2025_10_04_PM.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
+  {
+    title: "AI-powered Healthcare Appointment System",
+    desc: "A modern healthcare platform that uses artificial intelligence to recommend appropriate medical care and connect patients with the best available doctors in their area. The system features a user-friendly interface, secure authentication, and a responsive design. Users can easily book appointments, manage their health records, and receive personalized recommendations.",
+    challenges: [
+      {
+        title:
+          "AI-powered Recommendations: Get personalized suggestions for medical care based on symptoms",
+      },
+      {
+        title:
+          "Location-based Doctor Matching: Find the best doctors in your area (e.g., Sylhet)",
+      },
+      {
+        title:
+          "Direct Appointment Booking: Schedule appointments with recommended doctors",
+      },
+      {
+        title: "User Authentication: Secure login/register with NextAuth",
+      },
+    ],
+    plans: [
+      {
+        title:
+          "Live chat integration for real-time Doctor-Patient interaction.",
+      },
+      {
+        title:
+          "AI-powered appointment recommendations based on user preferences.",
+      },
+      {
+        title: "automated reminders for upcoming appointments.",
+      },
+      {
+        title: "Multi-language support to enhance accessibility.",
+      },
+    ],
+    devstack:
+      "MongoDB, Mongoose, Next.js, NextAuth, Tailwind CSS, Framer Motion, Gemini AI",
+    link: "https://healthcare-appointment-system-three.vercel.app/",
+    git: "https://github.com/arshakib/Healthcare-Appointment-System",
+    src: proj5,
+    type: "fullstack",
+  },
   {
     title: "Collaborative Study Platform",
     desc: "The Collaborative Study Platform is an interactive web application designed to facilitate online learning by connecting students and tutors. It features role-based dashboards, secure authentication, CRUD functionalities, and a responsive design. Users can participate in study sessions, manage study materials, and access a structured learning environment.",
