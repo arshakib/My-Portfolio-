@@ -60,7 +60,7 @@ const Footer = () => {
             <ul className="flex gap-5 flex-wrap">
               <a
                 target="_blank"
-                href="https://github.com"
+                href="https://github.com/arshakib"
                 aria-label="GitHub"
                 className="text-gray-200 flex-items-center justify-center w-10 h-10 rounded-full"
               >
